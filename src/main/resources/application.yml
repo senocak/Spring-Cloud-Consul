@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: myApp
+  config:
+    import: "consul:"
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      config:
+        enabled: true
+        data-key: data
+        format: YAML
